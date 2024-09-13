@@ -1,0 +1,21 @@
+print("calcular la pendiente y el intersecto de la funcion")
+      
+#variables
+
+x1= float(input("punto x1=\n"))
+y1= float(input("punto y1=\n"))
+x2= float(input("punto x2=\n"))
+y2= float(input("punto y2=\n"))
+
+
+if x1==x2 and y1==y2:
+    print("no define una recta")
+
+else: 
+    if x1==x2:
+        print(f"La ecuacion de la recta es: x={x1}")
+    else:
+        
+        m=(y2-y1)/(x2-x1)
+        b= y1-m*x1
+        print(f"la pendiente y el intersecto es:{m},{b}")
